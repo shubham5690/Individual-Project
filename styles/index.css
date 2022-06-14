@@ -1,7 +1,23 @@
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
+
+#all-navbar{
+     position: fixed; 
+     /* border: 1px solid red; */
+     width: 100%;
+     
+}
+
 #top-navbar{
+    
     display: flex;
     justify-content: space-between;
     background-color: #eeeeee;
+    
+    
 }
 #a,#b{
     display: flex;
@@ -11,19 +27,23 @@
     color: rgba(0,0,0,0.9);
     margin-left: 150px;
     margin-right: 150px;
+    cursor: pointer;
 }
 /* --------------------------navbar */
 #navbar{
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    /* position: fixed; */
 }
 #left,#right{
     display: flex;
     gap: 30px;
-    margin-left: 120px;
+    margin-left: 110px;
     margin-right: 100px;
     font-family:  "Gill Sans", sans-serif;
     font-size: large;
+    cursor: pointer;
 }
 #left img{
     width: 147px;
@@ -39,20 +59,115 @@
     margin-top: 10px;
     padding-left: 10px;
 }
+#hr{
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 1px solid white;
+}
 
 /* ------------------down-navbar------------ */
+#down-navbar{
+    background-color: white;
+}
 #down-navbar>div{
     display: flex;
     font-family:  "Gill Sans", sans-serif;  
     /* border:1px solid red; */
     width: 400px;
+    height: 70px;
     margin: auto;
-    gap:30px
+    gap:30px;
+    
 }
 #down-navbar>div p,h6{
-    font-size: 25px;   
+    font-size: 25px;
+    cursor: pointer;   
 }
 #down-navbar>div h6{
     font-size: 30px;
     margin-top: 21px;    
+}
+
+/* ----------------------------------------------------- */
+
+#home-pic{
+    display: flex;
+    gap:20px;
+    margin-top: 190px;
+    /* border: 1px solid blue; */
+    justify-content: space-around;
+}
+#home-pic img{
+    width: 470px;
+    height: 470px;
+    
+}
+/* -------------------------------------------------------- */
+#nine-div{
+    display:flex ;
+    gap: 25px;
+    
+    width: 85%;
+    margin: auto;
+    /* border: 1px solid red; */
+    padding-bottom: 30px;
+
+}
+#nine-div img{
+    width: 115px;
+    height: 140px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+/* ----------------popular category------------------- */
+#popular{
+    display: flex;
+    /* gap: 30px; */
+    margin: auto;
+    width: 85%;
+    /* border: 1px solid red; */
+}
+#popular>div{
+    margin: auto;
+    gap: 30px;
+
+}
+#popular img{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    
+}
+.pc{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family:  "Gill Sans", sans-serif;
+    
+    
+}
+/* --------------------------trends-3-div-------------------------------------- */
+#trends{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#trends img{
+    height: 471px;
+    width: 471px;
+}
+/* ----------------------------------favourite-------------------------------------- */
+#favourite{
+    display: flex;
+    justify-content: space-around;
+}
+#favourite img{
+    width: 730px;
+    height: 550px;
+}
+/* ---------------------FOOTER-------------------------------- */
+#footer{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-around;
 }
