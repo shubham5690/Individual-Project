@@ -12,3 +12,47 @@
     margin-left: 150px;
     margin-right: 150px;
 }
+/* --------------------------navbar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+}
+#left,#right{
+    display: flex;
+    gap: 30px;
+    margin-left: 120px;
+    margin-right: 100px;
+    font-family:  "Gill Sans", sans-serif;
+    font-size: large;
+}
+#left img{
+    width: 147px;
+    height: 50px;
+
+}
+#search-bar{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #eaeaea;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+/* ------------------down-navbar------------ */
+#down-navbar>div{
+    display: flex;
+    font-family:  "Gill Sans", sans-serif;  
+    /* border:1px solid red; */
+    width: 400px;
+    margin: auto;
+    gap:30px
+}
+#down-navbar>div p,h6{
+    font-size: 25px;   
+}
+#down-navbar>div h6{
+    font-size: 30px;
+    margin-top: 21px;    
+}
