@@ -1,0 +1,14 @@
+#top-navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+}
+#a,#b{
+    display: flex;
+    gap:30px;
+    font-size: small;
+    font-family:  "Gill Sans", sans-serif;
+    color: rgba(0,0,0,0.9);
+    margin-left: 150px;
+    margin-right: 150px;
+}
