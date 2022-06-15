@@ -43,12 +43,18 @@ html,body {
     margin-right: 100px;
     font-family:  "Gill Sans", sans-serif;
     font-size: large;
-    cursor: pointer;
+    
 }
 #left img{
     width: 147px;
     height: 50px;
 
+}
+#left p,img{
+    cursor: pointer;
+}
+#right p{
+    cursor: pointer;
 }
 #search-bar{
     width: 300px;
@@ -169,5 +175,43 @@ html,body {
 #footer{
     display: flex;
     border: 1px solid red;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
+    /* height: 500px; */
+}
+#footer>div{
+    width: 285px;
+    height:auto;
+    border: 1px solid blue;
+
+}
+#footer img{
+    width: 100px;
+    height: 50px;
+}
+#footer h6{
+    font-size: medium;
+    font-family:  "Gill Sans", sans-serif;
+    /* color: yellow; */
+}
+#footer p{
+    font-family:  "Gill Sans", sans-serif;
+    font-size: medium;
+}
+/* --------------------------------------------------------------- */
+#footer-2{
+    width: 100%;
+    height: 300px;
+    border: 1px solid blue;
+    margin-top: 20px;
+    display: flex;
+    gap: 70px;
+    margin-left: 70px;
+}
+#footer-2>div{
+    width: 285px;
+    height:auto;
+    border: 1px solid blue;
+    
+
 }
