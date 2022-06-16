@@ -274,3 +274,8 @@ html,body {
     padding-top: 100px;
     padding-right: 35px;
 }
+
+a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.9);
+}

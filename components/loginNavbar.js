@@ -1,4 +1,4 @@
-function navbar(){
+function loginNavbar(){
     return `
     <div id="top-navbar">
             <div id="a">
@@ -25,22 +25,15 @@ function navbar(){
                 <input type="text" id="search-bar" placeholder= " Search by product,category or collection">
                 
                 <hr>
-                <p><a href="login.html">Login</a></p>
+                <p>Login</p>
                 <p><i class="fa-regular fa-heart"></i></p>
                 <p><i class="fa-thin fa-bag-shopping"></i></p>
                 
             </div>
             </div>
         <div id="hr"><hr></div>
-        <div id="down-navbar">
-            <div>
-                <p><a href="men.html">MEN</a></p>
-                <p><a href="women.html">WOMEN</a></p>
-                <h6><a href="index.html">ACCESSORIES</a></h6>
-            </div>               
-        </div>
-
     
     `
 }
-export {navbar};
+
+export {loginNavbar}
