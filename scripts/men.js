@@ -1,4 +1,4 @@
-console.log('men')
+
 
 import {navbar} from '../components/navbar.js'
 let Navbar=document.getElementById('all-navbar')
@@ -16,7 +16,7 @@ fetch('./scripts/men.json').then(function(res){
        
     }).then(function(data){
         
-        console.log(data)
+        // console.log(data)
         append(data)
 
         
@@ -40,8 +40,23 @@ function append(data){
         product.innerText=ele.product
         let tb=document.createElement('p')
         tb.innerText=ele.tribeMember
+//--------------------------------------------------------
+        div.addEventListener('click', function(){
+            items(ele)
+            // window.location.href="items.html"
+        })
+//---------------------------------------------------------
         div.append(img,name,price,product,tb)
         container.append(div)
     });
+
+}
+let mensData=JSON.parse(localStorage.getItem('mensdata')) || []
+
+function items(ele){
+    mensData.push(ele)
+    console.log(mensData)
+    localStorage.setItem('mensdata',JSON.stringify(mensData))
+    window.location.href="menSelectData.html"
 
 }

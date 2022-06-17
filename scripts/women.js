@@ -39,8 +39,22 @@ function append(data){
         product.innerText=ele.items
         let tb=document.createElement('p')
         tb.innerText=ele.tribeMember
+        //--------------------------------------------------------
+        div.addEventListener('click', function(){
+            items(ele)
+            // window.location.href="items.html"
+        })
+//---------------------------------------------------------
         div.append(img,name,price,product,tb)
         container.append(div)
     });
+
+}
+let womensData=JSON.parse(localStorage.getItem('womensdata')) || []
+function items(ele){
+    womensData.push(ele)
+    // console.log(womensData)
+    localStorage.setItem('womensdata',JSON.stringify(womensData))
+    window.location.href="womenSelectData.html"
 
 }
