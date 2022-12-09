@@ -16,5 +16,5 @@ Bewakoof is an Online Shopping site for Men and Women's Clothing. Shop from a wi
 - Created a login page
 - Created navbar and footer
 
-## clone the website named as bewakoof.com
+ 
 url - https://shubham5690.github.io/Individual-Project/
